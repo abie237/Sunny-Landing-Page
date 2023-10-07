@@ -97,6 +97,7 @@ body {
   font-size: 25px;
   text-align: center;
   margin-right: 12px;
+  display: none;
 }
 .landing .main-text {
   text-align: center;
@@ -306,11 +307,20 @@ body {
 }
 
 /*responsive*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   * {
     text-align: center;
   }
+  .nav .nav-btn {
+    display: block;
+  }
   .landing .visible {
+    display: block;
+  }
+  .landing .navbar {
+    display: none;
+  }
+  .landing .nav-btn {
     display: block;
   }
   .sunny .container {
@@ -353,8 +363,5 @@ body {
   }
   .navbar {
     display: none;
-  }
-  .nav-btn:hover .responsive-navbar-container {
-    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
